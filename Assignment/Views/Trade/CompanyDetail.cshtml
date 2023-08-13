@@ -1,0 +1,47 @@
+﻿@model CompanyDetails
+
+<div class="main-container">
+  <div class="company-profile">
+    <img src="@Model.CompanyProfile.Logo"/>
+    <h1>Company profile</h1>
+    <h5>Country</h5>
+    <p>@Model.CompanyProfile.Country</p>
+    <h5>Currency</h5>
+    <p>@Model.CompanyProfile.Currency</p>
+    <h5>Exchange</h5>
+    <p>@Model.CompanyProfile.Exchange</p>
+    <h5>IPO</h5>
+    <p>@Model.CompanyProfile.IPO?.ToString("dd/MM/yyyy")</p>
+    <h5>Market capitalization</h5>
+    <p>@Model.CompanyProfile.MarketCapitalization</p>
+    <h5>Name</h5>
+    <p>@Model.CompanyProfile.Name</p>
+    <h5>Phone</h5>
+    <p>@Model.CompanyProfile.Phone</p>
+    <h5>Share outstanding</h5>
+    <p>@Model.CompanyProfile.ShareOutstanding</p>
+    <h5>Ticker</h5>
+    <p>@Model.CompanyProfile.Ticker</p>
+    <h5>Web URL</h5>
+    <p><a href="@Model.CompanyProfile.WebUrl">Company site</a></p>
+    <h5>Industry</h5>
+    <p>@Model.CompanyProfile.FinnhubIndustry</p>
+  </div>
+  <div class="price-stock-quote">
+    <h1>Company stock price quote</h1>
+    <h5>Current price</h5>
+    <p>$ @Model.StockPriceQuote.CurrentPrice</p>
+    <h5>Change</h5>
+    <p>$ @Model.StockPriceQuote.Change</p>
+    <h5>Percent change</h5>
+    <p>$ @Model.StockPriceQuote.PercentChange</p>
+    <h5>Highest price of the day</h5>
+    <p>$ @Model.StockPriceQuote.HighestPriceOfTheDay</p>
+    <h5>Lowest price of the day</h5>
+    <p>$ @Model.StockPriceQuote.LowestPriceOfTheDay</p>
+    <h5>Open price of the day</h5>
+    <p>$ @Model.StockPriceQuote.OpenPriceOfTheDay</p>
+    <h5>Previous close price</h5>
+    <p>$ @Model.StockPriceQuote.PreviousClosePrice</p>
+  </div>
+</div>

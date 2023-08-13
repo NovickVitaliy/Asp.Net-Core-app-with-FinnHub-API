@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xua2X4ii0DocFxiXpNnlRRNPJUXB4RClmL4Hm/LYYMQ=",
+  "Source": "Assignment",
+  "BasePath": "_content/Assignment",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Assignment\\wwwroot",
+      "Source": "Assignment",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Assignment\\wwwroot\\",
+      "BasePath": "_content/Assignment",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Assignment\\wwwroot\\StyleSheet.css",
+      "SourceId": "Assignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Assignment\\wwwroot\\",
+      "BasePath": "_content/Assignment",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

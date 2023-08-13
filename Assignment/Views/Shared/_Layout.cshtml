@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Companies info app</title>
+  <link rel="stylesheet" href="~/StyleSheet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lexend:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="prompt-for-symbol">Type in company`s stock symbol</h1>
+  <div class="stock-examples">
+    <p>AAPL - Apple</p>
+    <p>MSFT - Microsoft</p>
+    <p> AMZN - Amazon</p>
+    <p>etc.</p>
+  </div>
+
+  <div id="form">
+    <form asp-controller="Trade" asp-action="CompanyDetail" method="post">
+      <div>
+        <input id="input" style="outline: 0;" type="text" name="stockSymbol"/>
+      </div>
+      <div id="button-div">
+        <button id="submit-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div>
+    @RenderBody()
+  </div>
+</body>
+</html>
